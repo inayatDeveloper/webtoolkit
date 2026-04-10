@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-    return <> {/* JSON-LD STRUCTURED DATA */}
+    return <>
         <ImageCompressor />
         <script
             type="application/ld+json"
