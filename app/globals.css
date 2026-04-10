@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "react-datepicker/dist/react-datepicker.css";
 
 :root {
   --background: #ffffff;
@@ -23,4 +24,75 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Calendar container */
+.react-datepicker {
+  background-color: #111827 !important;
+  border: 1px solid #374151 !important;
+  color: #e5e7eb !important; /* LIGHT TEXT */
+}
+
+/* Header */
+.react-datepicker__header {
+  background-color: #0b1220 !important;
+  border-bottom: 1px solid #374151 !important;
+  color: #e5e7eb !important;
+}
+
+/* Month & Year text */
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: #e5e7eb !important;
+}
+
+/* Day names (Sun, Mon...) */
+.react-datepicker__day-name {
+  color: #9ca3af !important; /* GRAY */
+}
+
+/* Days */
+.react-datepicker__day {
+  color: #e5e7eb !important;
+}
+
+/* Hover */
+.react-datepicker__day:hover {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* Selected day */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* Disabled days */
+.react-datepicker__day--disabled {
+  color: #4b5563 !important;
+}
+
+/* Dropdown (year/month select) */
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown {
+  background-color: #111827 !important;
+  border: 1px solid #374151 !important;
+}
+
+.react-datepicker__year-option,
+.react-datepicker__month-option {
+  color: #e5e7eb !important;
+}
+
+/* Fix arrows */
+.react-datepicker__navigation-icon::before {
+  border-color: #e5e7eb !important;
+}
+
+/* Fix popper z-index */
+.react-datepicker-popper {
+  z-index: 9999 !important;
 }
