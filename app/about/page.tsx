@@ -58,7 +58,7 @@ export default function About() {
 
                     {/* NEW LINE */}
                     <p className="text-gray-400 text-sm">
-                        🚀 More powerful tools are continuously being added to improve your productivity.
+                        🚀 More powerful tools are continuously being added to improve your productivity soon.
                     </p>
 
                 </div>
