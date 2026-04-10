@@ -184,14 +184,14 @@ export default function AgeCalculatorClient() {
                         <div className="flex flex-col sm:flex-row gap-3">
                             <button
                                 onClick={calculateAge}
-                                className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium"
+                                className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium cursor-pointer"
                             >
                                 Calculate Age
                             </button>
 
                             <button
                                 onClick={handleClear}
-                                className="w-full bg-gray-700 hover:bg-gray-600 transition text-white py-2.5 rounded-xl font-medium"
+                                className="w-full bg-gray-700 hover:bg-gray-600 transition text-white py-2.5 rounded-xl font-medium cursor-pointer"
                             >
                                 Clear
                             </button>
@@ -244,7 +244,7 @@ export default function AgeCalculatorClient() {
 
                     <button
                         onClick={handleCopy}
-                        className="mt-4 w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium"
+                        className="mt-4 w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium cursor-pointer"
                     >
                         {copied ? "Copied!" : "Copy Result"}
                     </button>

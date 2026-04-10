@@ -80,7 +80,7 @@ export default function ImageCompressor() {
                                 type="file"
                                 accept="image/*"
                                 onChange={handleUpload}
-                                className="w-full text-sm"
+                                className="w-full text-sm cursor-pointer"
                             />
                         </div>
 
@@ -105,7 +105,7 @@ export default function ImageCompressor() {
                                             compressImage(originalImage);
                                         }
                                     }}
-                                    className="w-full"
+                                    className="w-full cursor-pointer"
                                 />
 
                                 <p className="text-sm text-gray-400">
@@ -150,7 +150,7 @@ export default function ImageCompressor() {
                         <button
                             onClick={handleDownload}
                             disabled={!compressedImage}
-                            className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium disabled:opacity-50"
+                            className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium disabled:opacity-50 cursor-pointer"
                         >
                             Download Compressed Image
                         </button>

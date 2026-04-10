@@ -55,21 +55,21 @@ export default function JsonFormatterPage() {
                 <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
                     <button
                         onClick={formatJSON}
-                        className="bg-indigo-600 hover:bg-indigo-700 transition px-5 py-2 rounded-xl shadow-md w-full sm:w-auto"
+                        className="bg-indigo-600 hover:bg-indigo-700 transition px-5 py-2 rounded-xl shadow-md w-full sm:w-auto cursor-pointer"
                     >
                         Format JSON
                     </button>
 
                     <button
                         onClick={minifyJSON}
-                        className="bg-pink-600 hover:bg-pink-700 transition px-5 py-2 rounded-xl shadow-md w-full sm:w-auto"
+                        className="bg-pink-600 hover:bg-pink-700 transition px-5 py-2 rounded-xl shadow-md w-full sm:w-auto cursor-pointer"
                     >
                         Minify JSON
                     </button>
 
                     <button
                         onClick={copyToClipboard}
-                        className="bg-emerald-600 hover:bg-emerald-700 transition px-5 py-2 rounded-xl shadow-md w-full sm:w-auto"
+                        className="bg-emerald-600 hover:bg-emerald-700 transition px-5 py-2 rounded-xl shadow-md w-full sm:w-auto cursor-pointer"
                     >
                         {copied ? "Copied ✅" : "Copy Output"}
                     </button>

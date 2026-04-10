@@ -91,14 +91,14 @@ export default function WordCounterClient() {
                             <div className="flex gap-3">
                                 <button
                                     onClick={handleCopy}
-                                    className="bg-blue-600 px-4 py-2 rounded-xl text-white"
+                                    className="bg-blue-600 px-4 py-2 rounded-xl text-white cursor-pointer"
                                 >
                                     Copy
                                 </button>
 
                                 <button
                                     onClick={handleClear}
-                                    className="bg-gray-700 px-4 py-2 rounded-xl text-white"
+                                    className="bg-gray-700 px-4 py-2 rounded-xl text-white cursor-pointer"
                                 >
                                     Clear
                                 </button>

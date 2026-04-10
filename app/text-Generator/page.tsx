@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import LoremIpsumGenerator from "./loremIpsumGeneratorClient";
+import LoremIpsumGenerator from "./textGeneratorClient";
 
 export const metadata: Metadata = {
     title: "Lorem Ipsum Generator - Free Placeholder Text Tool",

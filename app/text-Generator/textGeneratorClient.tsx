@@ -90,7 +90,7 @@ export default function LoremIpsumGenerator() {
                     <div className="flex items-end">
                         <button
                             onClick={generateText}
-                            className="w-full bg-blue-600 hover:bg-blue-700 rounded-lg py-2"
+                            className="w-full bg-blue-600 hover:bg-blue-700 rounded-lg py-2 cursor-pointer"
                         >
                             Generate Text
                         </button>
@@ -106,14 +106,14 @@ export default function LoremIpsumGenerator() {
                 <div className="flex gap-3">
                     <button
                         onClick={copyToClipboard}
-                        className="bg-green-600 px-4 py-2 rounded-lg"
+                        className="bg-green-600 px-4 py-2 rounded-lg cursor-pointer"
                     >
                         Copy
                     </button>
 
                     <button
                         onClick={clearText}
-                        className="bg-red-600 px-4 py-2 rounded-lg"
+                        className="bg-red-600 px-4 py-2 rounded-lg cursor-pointer"
                     >
                         Clear
                     </button>

@@ -180,7 +180,7 @@ export default function ColorTool() {
 
                                     <button
                                         onClick={() => copy(value, key)}
-                                        className="mt-2 text-xs bg-blue-600 px-2 py-1 rounded-md"
+                                        className="mt-2 text-xs bg-blue-600 px-2 py-1 rounded-md cursor-pointer"
                                     >
                                         Copy
                                     </button>
@@ -190,7 +190,7 @@ export default function ColorTool() {
 
                         <button
                             onClick={generatePalette}
-                            className="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-xl"
+                            className="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-xl cursor-pointer"
                         >
                             Generate Palette
                         </button>
@@ -226,7 +226,7 @@ export default function ColorTool() {
 
                             <button
                                 onClick={() => copy(gradientCSS, "gradient")}
-                                className="w-full mt-3 bg-blue-600 hover:bg-blue-700 py-2 rounded-xl"
+                                className="w-full mt-3 bg-blue-600 hover:bg-blue-700 py-2 rounded-xl cursor-pointer "
                             >
                                 Copy Gradient CSS
                             </button>

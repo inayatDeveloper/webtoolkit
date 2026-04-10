@@ -145,7 +145,7 @@ export default function QRGenerator() {
                             <div className="flex gap-2 mb-4">
                                 <button
                                     onClick={() => setActiveTab("popular")}
-                                    className={`px-3 py-1 rounded text-sm ${activeTab === "popular"
+                                    className={`px-3 py-1 rounded text-sm cursor-pointer ${activeTab === "popular"
                                         ? "bg-blue-600"
                                         : "bg-gray-700"
                                         }`}
@@ -155,7 +155,7 @@ export default function QRGenerator() {
 
                                 <button
                                     onClick={() => setActiveTab("custom")}
-                                    className={`px-3 py-1 rounded text-sm ${activeTab === "custom"
+                                    className={`px-3 py-1 rounded text-sm cursor-pointer ${activeTab === "custom"
                                         ? "bg-blue-600"
                                         : "bg-gray-700"
                                         }`}
@@ -245,7 +245,7 @@ export default function QRGenerator() {
                         {/* DOWNLOAD */}
                         <button
                             onClick={downloadQR}
-                            className="w-full bg-blue-600 py-2.5 rounded-xl"
+                            className="w-full bg-blue-600 py-2.5 rounded-xl cursor-pointer"
                         >
                             Download QR Code
                         </button>

@@ -88,7 +88,7 @@ const tools = [
   {
     title: "Text Generator",
     subtitle: "Generate placeholder text for any purpose",
-    link: "/lorem-ipsum-generator",
+    link: "/text-Generator",
   },
   {
     title: "Age Calculator",

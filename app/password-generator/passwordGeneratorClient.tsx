@@ -118,14 +118,14 @@ export default function PasswordGenerator() {
                         <div className="flex gap-2">
                             <button
                                 onClick={() => setVisible(!visible)}
-                                className="bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm"
+                                className="bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded-lg text-sm cursor-pointer"
                             >
                                 {visible ? "Hide" : "Show"}
                             </button>
 
                             <button
                                 onClick={copyToClipboard}
-                                className="bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-lg text-sm"
+                                className="bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-lg text-sm cursor-pointer"
                             >
                                 Copy
                             </button>
@@ -174,7 +174,7 @@ export default function PasswordGenerator() {
                             max="32"
                             value={length}
                             onChange={(e) => setLength(Number(e.target.value))}
-                            className="w-full"
+                            className="w-full cursor-pointer"
                         />
                     </div>
 
@@ -213,7 +213,7 @@ export default function PasswordGenerator() {
                     {/* GENERATE */}
                     <button
                         onClick={generatePassword}
-                        className="w-full bg-blue-600 hover:bg-blue-700 transition py-2.5 rounded-xl font-medium"
+                        className="w-full bg-blue-600 hover:bg-blue-700 transition py-2.5 rounded-xl font-medium cursor-pointer"
                     >
                         Generate Secure Password
                     </button>

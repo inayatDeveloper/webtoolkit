@@ -84,7 +84,7 @@ export default function Base64ToolClient() {
                         <div className="flex gap-3">
                             <button
                                 onClick={() => setMode("encode")}
-                                className={`px-4 py-2 rounded-lg border transition ${mode === "encode"
+                                className={`px-4 py-2 rounded-lg border transition cursor-pointer ${mode === "encode"
                                     ? "bg-blue-600 border-blue-500 text-white"
                                     : "border-gray-600 text-gray-300"
                                     }`}
@@ -94,7 +94,7 @@ export default function Base64ToolClient() {
 
                             <button
                                 onClick={() => setMode("decode")}
-                                className={`px-4 py-2 rounded-lg border transition ${mode === "decode"
+                                className={`px-4 py-2 rounded-lg border transition cursor-pointer ${mode === "decode"
                                     ? "bg-blue-600 border-blue-500 text-white"
                                     : "border-gray-600 text-gray-300"
                                     }`}
@@ -113,14 +113,14 @@ export default function Base64ToolClient() {
                         <div className="flex flex-col sm:flex-row gap-3">
                             <button
                                 onClick={handleProcess}
-                                className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium"
+                                className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium cursor-pointer"
                             >
                                 {mode === "encode" ? "Encode" : "Decode"}
                             </button>
 
                             <button
                                 onClick={handleClear}
-                                className="w-full bg-gray-700 hover:bg-gray-600 transition text-white py-2.5 rounded-xl font-medium"
+                                className="w-full bg-gray-700 hover:bg-gray-600 transition text-white py-2.5 rounded-xl font-medium cursor-pointer"
                             >
                                 Clear
                             </button>
@@ -151,7 +151,7 @@ export default function Base64ToolClient() {
 
                     <button
                         onClick={handleCopy}
-                        className="mt-4 w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium"
+                        className="mt-4 w-full bg-blue-600 hover:bg-blue-700 transition text-white py-2.5 rounded-xl font-medium cursor-pointer"
                     >
                         {copied ? "Copied!" : "Copy Output"}
                     </button>
