@@ -66,11 +66,6 @@ const tools = [
     link: "/json-formatter",
   },
   {
-    title: "Image Compressor",
-    subtitle: "Reduce image size without losing quality",
-    link: "/image-compressor",
-  },
-  {
     title: "Password Generator",
     subtitle: "Generate strong and secure passwords",
     link: "/password-generator",
@@ -96,9 +91,30 @@ const tools = [
     link: "/age-calculator",
   },
   {
+    title: "BMI Calculator",
+    subtitle: "Check Your Body Mass Index Instantly",
+    link: "/bmi-calculator",
+  },
+
+  {
     title: "Color Picker",
     subtitle: "Pick and explore colors with ease",
     link: "/color-picker",
+  },
+  {
+    title: "Image Resizer",
+    subtitle: "Resize images instantly in your browser.",
+    link: "/image-resizer",
+  },
+  {
+    title: "Image Cropper",
+    subtitle: "Crop photos online fast and free.”.",
+    link: "/image-cropper",
+  },
+  {
+    title: "Image Compressor",
+    subtitle: "Reduce image size without losing quality",
+    link: "/image-compressor",
   },
 ];
 
