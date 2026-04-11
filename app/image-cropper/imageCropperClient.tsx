@@ -27,6 +27,7 @@ export default function ImageCropper() {
     };
 
     // ---------------- MOUSE DOWN ----------------
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const onMouseDown = (e: any) => {
         if (!imgRef.current) return;
 
