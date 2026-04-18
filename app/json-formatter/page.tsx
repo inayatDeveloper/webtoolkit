@@ -17,12 +17,12 @@ export const metadata: Metadata = {
         title: "JSON Formatter Tool",
         description:
             "Beautify and validate JSON data instantly with this free tool.",
-        url: "https://yourdomain.com/json-formatter",
+        url: "https://webtoolkit-tau.vercel.app/json-formatter",
         type: "website",
     },
 
     alternates: {
-        canonical: "https://yourdomain.com/json-formatter",
+        canonical: "https://webtoolkit-tau.vercel.app/json-formatter",
     },
 };
 
@@ -35,7 +35,7 @@ export default function Page() {
                     "@context": "https://schema.org",
                     "@type": "WebApplication",
                     name: "JSON Formatter Tool",
-                    url: "https://yourdomain.com/json-formatter",
+                    url: "https://webtoolkit-tau.vercel.app/json-formatter",
                     description:
                         "Free online JSON formatter and validator to beautify, minify, and clean JSON data instantly.",
                     applicationCategory: "Utility",

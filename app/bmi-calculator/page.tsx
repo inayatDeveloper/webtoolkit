@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         title: "BMI Calculator with Age",
         description:
             "Calculate BMI using age, height, and weight instantly with this free online health tool.",
-        url: "https://yourdomain.com/bmi-calculator",
+        url: "https://webtoolkit-tau.vercel.app/bmi-calculator",
         type: "website",
     },
     twitter: {
@@ -39,7 +39,7 @@ export default function Page() {
                 "@context": "https://schema.org",
                 "@type": "WebApplication",
                 name: "BMI Calculator with Age",
-                url: "https://yourdomain.com/bmi-calculator",
+                url: "https://webtoolkit-tau.vercel.app/bmi-calculator",
                 description:
                     "Free BMI calculator with age, height, and weight. Instantly calculate Body Mass Index and check your health status online.",
                 applicationCategory: "HealthApplication",

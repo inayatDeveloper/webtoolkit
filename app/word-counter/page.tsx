@@ -26,14 +26,12 @@ export const metadata: Metadata = {
         title: "Word Counter Tool - Analyze Text Instantly",
         description:
             "Count words, characters, sentences, paragraphs and reading time instantly with this free online tool.",
-        url: "https://your-domain.com/word-counter",
-        siteName: "Your Tools Platform",
+        url: "https://webtoolkit-tau.vercel.app/word-counter",
+        siteName: "webtoolkit-tau",
         type: "website",
         images: [
             {
-                url: "https://your-domain.com/og/word-counter.png",
-                width: 1200,
-                height: 630,
+                url: "https://webtoolkit-tau.vercel.app/images/word-counter-image.png",
                 alt: "Word Counter Tool Preview",
             },
         ],
@@ -44,11 +42,11 @@ export const metadata: Metadata = {
         title: "Word Counter Tool",
         description:
             "Free online tool to count words, characters, sentences and reading time.",
-        images: ["https://your-domain.com/og/word-counter.png"],
+        images: ["https://webtoolkit-tau.vercel.app/images/word-counter-image.png"],
     },
 
     alternates: {
-        canonical: "https://your-domain.com/word-counter",
+        canonical: "https://webtoolkit-tau.vercel.app/word-counter",
     },
 };
 
@@ -66,7 +64,7 @@ export default function Page() {
                         "@context": "https://schema.org",
                         "@type": "WebApplication",
                         name: "Word Counter Tool",
-                        url: "https://your-domain.com/word-counter",
+                        url: "https://webtoolkit-tau.vercel.app/word-counter",
                         description:
                             "Free tool to count words, characters, sentences, paragraphs, and reading time instantly.",
                         applicationCategory: "Utility",

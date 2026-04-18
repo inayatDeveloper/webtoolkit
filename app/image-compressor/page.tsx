@@ -17,12 +17,12 @@ export const metadata: Metadata = {
         title: "Image Compressor Tool",
         description:
             "Compress and optimize your images instantly with this free online tool.",
-        url: "https://yourdomain.com/image-compressor",
+        url: "https://webtoolkit-tau.vercel.app/image-compressor",
         type: "website",
     },
 
     alternates: {
-        canonical: "https://yourdomain.com/image-compressor",
+        canonical: "https://webtoolkit-tau.vercel.app/image-compressor",
     },
 };
 
@@ -36,7 +36,7 @@ export default function Page() {
                     "@context": "https://schema.org",
                     "@type": "WebApplication",
                     name: "Image Compressor Tool",
-                    url: "https://yourdomain.com/image-compressor",
+                    url: "https://webtoolkit-tau.vercel.app/image-compressor",
                     description:
                         "Free online image compressor to reduce file size and optimize images instantly without losing quality.",
                     applicationCategory: "Utility",

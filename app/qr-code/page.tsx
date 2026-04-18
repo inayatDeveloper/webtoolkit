@@ -15,8 +15,8 @@ export const metadata = {
         title: "QR Code Generator Tool",
         description:
             "Create and customize QR codes with colors and logos instantly.",
-        url: "https://yourdomain.com/qr-code",
-        siteName: "Your Tools",
+        url: "https://webtoolkit-tau.vercel.app/qr-code",
+        siteName: "webtoolkit-tau",
         type: "website",
     },
 };
@@ -32,7 +32,7 @@ export default function Page() {
                         "@context": "https://schema.org",
                         "@type": "WebApplication",
                         name: "QR Code Generator",
-                        url: "https://yourdomain.com/qr-code",
+                        url: "https://webtoolkit-tau.vercel.app/qr-code",
                         description:
                             "Free online QR code generator to create and customize QR codes with logos and colors.",
                         applicationCategory: "Utility",

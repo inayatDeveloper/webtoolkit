@@ -16,22 +16,20 @@ export const metadata: Metadata = {
         "base64 to text",
         "online encoding tool",
     ],
-    authors: [{ name: "Your Website Name" }],
-    creator: "Your Website Name",
-    metadataBase: new URL("https://yourdomain.com"),
+    authors: [{ name: "Inayat Ulllah" }],
+    creator: "webtoolkit-tau",
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
         title: "Base64 Encoder & Decoder Online",
         description:
             "Encode and decode Base64 instantly with this free online tool.",
-        url: "https://yourdomain.com/base64-generator",
-        siteName: "Free Online Tools Hub",
+        url: "https://webtoolkit-tau.vercel.app/base64-generator",
+        siteName: "webtoolkit-tau",
         type: "website",
         images: [
             {
-                url: "/og-base64.png",
-                width: 1200,
-                height: 630,
+                url: "/images/encode-image.png",
                 alt: "Base64 Encoder Decoder Tool",
             },
         ],
@@ -42,7 +40,7 @@ export const metadata: Metadata = {
         title: "Base64 Encoder & Decoder",
         description:
             "Convert text to Base64 or decode Base64 instantly online.",
-        images: ["/og-base64.png"],
+        images: ["/images/encode-image.png"],
     },
 
     robots: {
@@ -64,7 +62,7 @@ export default function Page() {
                         "@context": "https://schema.org",
                         "@type": "WebApplication",
                         name: "Base64 Encoder Decoder",
-                        url: "https://yourdomain.com/base64-generator",
+                        url: "https://webtoolkit-tau.vercel.app/base64-generator",
                         description:
                             "Free online Base64 encoder and decoder tool to encode text and decode Base64 instantly.",
                         applicationCategory: "Utility",

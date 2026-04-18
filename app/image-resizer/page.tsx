@@ -13,18 +13,16 @@ export const metadata: Metadata = {
         "image compressor",
         "web toolkit image tools",
     ],
-    authors: [{ name: "Web Toolkit" }],
+    authors: [{ name: "Inayat Ullah" }],
     openGraph: {
         title: "Image Resizer Tool - Resize Images Instantly",
         description:
             "Resize images online for free without uploading. Fast client-side image resizer tool.",
         type: "website",
-        url: "https://your-domain.com/image-resizer",
+        url: "https://webtoolkit-tau.vercel.app/image-resizer",
         images: [
             {
-                url: "https://your-domain.com/og-image.png",
-                width: 1200,
-                height: 630,
+                url: "/images/image-resizer.png"
             },
         ],
     },
@@ -32,7 +30,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Image Resizer Tool",
         description: "Resize images instantly in browser - free Web Toolkit tool.",
-        images: ["https://your-domain.com/og-image.png"],
+        images: ["/images/image-resizer.png"],
     },
     robots: {
         index: true,

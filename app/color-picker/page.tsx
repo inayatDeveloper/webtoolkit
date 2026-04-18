@@ -18,14 +18,12 @@ export const metadata: Metadata = {
         title: "Color Picker & Palette Generator",
         description:
             "Create beautiful colors, palettes, and gradients instantly with this free online tool.",
-        url: "https://yourdomain.com/color-picker",
-        siteName: "Your Tools",
+        url: "https://webtoolkit-tau.vercel.app/color-picker",
+        siteName: "webtoolkit-tau",
         type: "website",
         images: [
             {
-                url: "https://yourdomain.com/og-color-tool.png",
-                width: 1200,
-                height: 630,
+                url: "/images/color-picker-image.png",
                 alt: "Color Picker Tool",
             },
         ],
@@ -36,11 +34,11 @@ export const metadata: Metadata = {
         title: "Color Picker & Palette Generator",
         description:
             "Pick colors, create palettes, and copy formats instantly.",
-        images: ["https://yourdomain.com/og-color-tool.png"],
+        images: ["/images/color-picker-image.png"],
     },
 
     alternates: {
-        canonical: "https://yourdomain.com/color-picker",
+        canonical: "https://webtoolkit-tau.vercel.app/color-picker",
     },
 };
 
@@ -52,7 +50,7 @@ export default function Page() {
                 "@context": "https://schema.org",
                 "@type": "WebApplication",
                 name: "Color Picker & Palette Generator",
-                url: "https://yourdomain.com/color-picker",
+                url: "https://webtoolkit-tau.vercel.app/color-picker",
                 description:
                     "Free online color picker to generate palettes, gradients, and copy HEX, RGB, and HSL formats instantly.",
                 applicationCategory: "Utility",

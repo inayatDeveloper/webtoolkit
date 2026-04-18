@@ -13,7 +13,7 @@ export default function Contact() {
                 <div className="text-center">
                     <h1 className="text-3xl font-bold">Contact Us</h1>
                     <p className="text-gray-400 text-sm mt-2">
-                        We'd love to hear from you
+                        We would love to hear from you
                     </p>
                 </div>
 
@@ -22,7 +22,7 @@ export default function Contact() {
 
                     <h2 className="text-lg font-semibold">Email</h2>
                     <p className="text-gray-400 text-sm">
-                        support@webtoolkit.store
+                        InayatDeveloper@gmail.com
                     </p>
 
                     <h2 className="text-lg font-semibold">Support</h2>

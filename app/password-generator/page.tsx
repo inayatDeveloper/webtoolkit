@@ -15,8 +15,8 @@ export const metadata = {
         title: "Secure Password Generator Tool",
         description:
             "Create strong and secure passwords instantly for your accounts.",
-        url: "https://yourdomain.com/password-generator",
-        siteName: "Your Tools",
+        url: "https://webtoolkit-tau.vercel.app/password-generator",
+        siteName: "webtoolkit-tau",
         type: "website",
     },
 };
@@ -32,7 +32,7 @@ export default function Page() {
                         "@context": "https://schema.org",
                         "@type": "WebApplication",
                         name: "Password Generator",
-                        url: "https://yourdomain.com/password-generator",
+                        url: "https://webtoolkit-tau.vercel.app/password-generator",
                         description:
                             "Free online password generator to create strong and secure passwords instantly.",
                         applicationCategory: "SecurityApplication",

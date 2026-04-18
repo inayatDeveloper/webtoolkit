@@ -16,20 +16,20 @@ export const metadata: Metadata = {
         "next birthday calculator",
         "online age tool",
     ],
-    authors: [{ name: "Your Website Name" }],
-    creator: "Your Website Name",
-    metadataBase: new URL("https://yourdomain.com"),
+    authors: [{ name: "Inayat Ullah" }],
+    creator: "webtoolkit-tau",
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
         title: "Age Calculator | Calculate Your Exact Age Instantly",
         description:
             "Find your exact age, total days lived, and next birthday in seconds with this free online age calculator.",
-        url: "https://yourdomain.com/age-calculator",
-        siteName: "Free Online Tools Hub",
+        url: "https://webtoolkit-tau.vercel.app/age-calculator",
+        siteName: "webtoolkit-tau",
         type: "website",
         images: [
             {
-                url: "/og-age-calculator.png",
+                url: "/images/age-calcultor-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Age Calculator Tool",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         title: "Age Calculator | Free Online Tool",
         description:
             "Calculate your exact age, total days lived, and next birthday instantly.",
-        images: ["/og-age-calculator.png"],
+        images: ["/images/age-calcultor-image.png"],
     },
 
     robots: {
@@ -61,7 +61,7 @@ export default function Page() {
                     "@context": "https://schema.org",
                     "@type": "WebApplication",
                     name: "Age Calculator",
-                    url: "https://yourdomain.com/age-calculator",
+                    url: "https://webtoolkit-tau.vercel.app/age-calculator",
                     description:
                         "Free online age calculator that shows exact age, total days lived, and next birthday.",
                     applicationCategory: "Utility",

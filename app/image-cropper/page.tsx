@@ -16,13 +16,11 @@ export const metadata: Metadata = {
         title: "Image Cropper Tool - Crop Images Instantly",
         description:
             "Crop images online for free without uploading. Fast browser-based image cropper tool.",
-        url: "https://yourdomain.com/image-cropper",
+        url: "https://webtoolkit-tau.vercel.app/image-cropper",
         type: "website",
         images: [
             {
-                url: "https://yourdomain.com/og-image.png",
-                width: 1200,
-                height: 630,
+                url: "/images/image-cropper.png",
             },
         ],
     },
@@ -31,7 +29,7 @@ export const metadata: Metadata = {
         title: "Image Cropper Tool",
         description:
             "Crop images instantly in browser - free Web Toolkit tool.",
-        images: ["https://yourdomain.com/og-image.png"],
+        images: ["/images/image-cropper.png"],
     },
     robots: {
         index: true,
@@ -47,7 +45,7 @@ export default function Page() {
                 "@context": "https://schema.org",
                 "@type": "WebApplication",
                 name: "Image Cropper Tool",
-                url: "https://yourdomain.com/image-cropper",
+                url: "https://webtoolkit-tau.vercel.app/image-cropper",
                 description:
                     "Free online image cropper tool to crop images instantly in your browser without uploading. Fast, secure and fully browser-based image utility.",
                 applicationCategory: "Utility",
