@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: "https://webtoolkit-tau.vercel.app/image-resizer",
         images: [
             {
-                url: "/images/image-resizer.png"
+                url: "https://webtoolkit-tau.vercel.app/images/image-resizer.png"
             },
         ],
     },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Image Resizer Tool",
         description: "Resize images instantly in browser - free Web Toolkit tool.",
-        images: ["/images/image-resizer.png"],
+        images: ["https://webtoolkit-tau.vercel.app/images/image-resizer.png"],
     },
     robots: {
         index: true,

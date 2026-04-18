@@ -29,9 +29,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/images/age-calcultor-image.png",
-                width: 1200,
-                height: 630,
+                url: "https://webtoolkit-tau.vercel.app/images/age-calcultor-image.png",
                 alt: "Age Calculator Tool",
             },
         ],
@@ -42,7 +40,7 @@ export const metadata: Metadata = {
         title: "Age Calculator | Free Online Tool",
         description:
             "Calculate your exact age, total days lived, and next birthday instantly.",
-        images: ["/images/age-calcultor-image.png"],
+        images: ["https://webtoolkit-tau.vercel.app/images/age-calcultor-image.png"],
     },
 
     robots: {

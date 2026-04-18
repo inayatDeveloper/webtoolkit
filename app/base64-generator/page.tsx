@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/images/encode-image.png",
+                url: "https://webtoolkit-tau.vercel.app/images/encode-image.png",
                 alt: "Base64 Encoder Decoder Tool",
             },
         ],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         title: "Base64 Encoder & Decoder",
         description:
             "Convert text to Base64 or decode Base64 instantly online.",
-        images: ["/images/encode-image.png"],
+        images: ["https://webtoolkit-tau.vercel.app/images/encode-image.png"],
     },
 
     robots: {

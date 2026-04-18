@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/images/color-picker-image.png",
+                url: "https://webtoolkit-tau.vercel.app/images/color-picker-image.png",
                 alt: "Color Picker Tool",
             },
         ],
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         title: "Color Picker & Palette Generator",
         description:
             "Pick colors, create palettes, and copy formats instantly.",
-        images: ["/images/color-picker-image.png"],
+        images: ["https://webtoolkit-tau.vercel.app/images/color-picker-image.png"],
     },
 
     alternates: {
