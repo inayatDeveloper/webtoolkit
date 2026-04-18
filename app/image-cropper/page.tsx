@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "/images/image-cropper.png",
+                url: "https://webtoolkit-tau.vercel.app/images/image-cropper.png",
             },
         ],
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         title: "Image Cropper Tool",
         description:
             "Crop images instantly in browser - free Web Toolkit tool.",
-        images: ["/images/image-cropper.png"],
+        images: ["https://webtoolkit-tau.vercel.app/images/image-cropper.png"],
     },
     robots: {
         index: true,
