@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 export default function ImageCropper() {
     const imgRef = useRef<HTMLImageElement | null>(null);
     const fileRef = useRef<HTMLInputElement | null>(null);
+    const resultRef = useRef<HTMLDivElement | null>(null);
 
     const [image, setImage] = useState<string | null>(null);
     const [cropped, setCropped] = useState<string | null>(null);
@@ -26,13 +27,11 @@ export default function ImageCropper() {
         reader.readAsDataURL(file);
     };
 
-    // ---------------- MOUSE DOWN ----------------
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const onMouseDown = (e: any) => {
+    // ---------------- MOUSE EVENTS ----------------
+    const onMouseDown = (e: React.MouseEvent) => {
         if (!imgRef.current) return;
 
         const rect = imgRef.current.getBoundingClientRect();
-
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
 
@@ -41,8 +40,7 @@ export default function ImageCropper() {
         setDragging(true);
     };
 
-    // ---------------- MOUSE MOVE ----------------
-    const onMouseMove = (e: any) => {
+    const onMouseMove = (e: React.MouseEvent) => {
         if (!dragging || !imgRef.current) return;
 
         const rect = imgRef.current.getBoundingClientRect();
@@ -53,13 +51,44 @@ export default function ImageCropper() {
         });
     };
 
-    // ---------------- AUTO CROP ON RELEASE ----------------
     const onMouseUp = () => {
         setDragging(false);
         autoCrop();
     };
 
-    // ---------------- AUTO CROP FUNCTION ----------------
+    // ---------------- TOUCH EVENTS ----------------
+    const onTouchStart = (e: React.TouchEvent) => {
+        if (!imgRef.current) return;
+
+        const rect = imgRef.current.getBoundingClientRect();
+        const touch = e.touches[0];
+
+        const x = touch.clientX - rect.left;
+        const y = touch.clientY - rect.top;
+
+        setStart({ x, y });
+        setEnd({ x, y });
+        setDragging(true);
+    };
+
+    const onTouchMove = (e: React.TouchEvent) => {
+        if (!dragging || !imgRef.current) return;
+
+        const rect = imgRef.current.getBoundingClientRect();
+        const touch = e.touches[0];
+
+        setEnd({
+            x: touch.clientX - rect.left,
+            y: touch.clientY - rect.top,
+        });
+    };
+
+    const onTouchEnd = () => {
+        setDragging(false);
+        autoCrop();
+    };
+
+    // ---------------- AUTO CROP ----------------
     const autoCrop = () => {
         if (!image || !imgRef.current) return;
 
@@ -77,7 +106,6 @@ export default function ImageCropper() {
         const width = Math.abs(end.x - start.x) * scaleX;
         const height = Math.abs(end.y - start.y) * scaleY;
 
-        // avoid invalid crop
         if (width < 5 || height < 5) return;
 
         canvas.width = width;
@@ -95,7 +123,16 @@ export default function ImageCropper() {
             height
         );
 
-        setCropped(canvas.toDataURL("image/png"));
+        const result = canvas.toDataURL("image/png");
+        setCropped(result);
+
+        // ---------------- AUTO SCROLL TO RESULT ----------------
+        setTimeout(() => {
+            resultRef.current?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }, 100);
     };
 
     // ---------------- DOWNLOAD ----------------
@@ -147,12 +184,15 @@ export default function ImageCropper() {
                         className="relative mt-6 select-none"
                         onMouseMove={onMouseMove}
                         onMouseUp={onMouseUp}
+                        onTouchMove={onTouchMove}
+                        onTouchEnd={onTouchEnd}
                     >
                         <img
                             ref={imgRef}
                             src={image}
                             onMouseDown={onMouseDown}
-                            className="w-full max-h-[500px] object-contain rounded-lg cursor-crosshair"
+                            onTouchStart={onTouchStart}
+                            className="w-full max-h-[500px] object-contain rounded-lg cursor-crosshair touch-none"
                         />
 
                         {/* SELECTION BOX */}
@@ -172,7 +212,10 @@ export default function ImageCropper() {
 
                 {/* RESULT */}
                 {cropped && (
-                    <div className="mt-8 text-center">
+                    <div
+                        ref={resultRef}
+                        className="mt-8 text-center"
+                    >
                         <h2 className="text-emerald-400 mb-3">
                             Cropped Image
                         </h2>
@@ -182,7 +225,6 @@ export default function ImageCropper() {
                             className="mx-auto max-h-[300px] rounded-lg"
                         />
 
-                        {/* ONLY DOWNLOAD (NO EXTRA STEP) */}
                         <button
                             onClick={download}
                             className="mt-4 bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-xl cursor-pointer"
@@ -194,7 +236,7 @@ export default function ImageCropper() {
 
                 {/* FOOTER */}
                 <p className="text-center text-gray-500 text-xs mt-8">
-                    Fast • Instant Crop • No Upload Required
+                    Fast • Instant Crop • Mobile Friendly
                 </p>
 
             </div>
