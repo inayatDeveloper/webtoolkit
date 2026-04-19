@@ -33,6 +33,8 @@ export const metadata: Metadata = {
       {
         url: "https://webtoolkit-tau.vercel.app/images/home-page-image.png",
         alt: "Free Online Tools Collection",
+        width: 1200,
+        height: 630,
       },
     ],
   },
