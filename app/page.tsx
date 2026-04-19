@@ -18,22 +18,20 @@ export const metadata: Metadata = {
     "convert tools online",
     "easy online tools",
   ],
-  authors: [{ name: "Your Website Name" }],
-  creator: "Your Website Name",
-  metadataBase: new URL("https://yourdomain.com"),
+  authors: [{ name: "webtoolkit-tau" }],
+  creator: "Inayat Ullah",
+  metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
   openGraph: {
     title: "Free Online Tools Collection",
     description:
       "A simple and fast collection of free online tools for everyday tasks like QR codes, images, text, and more.",
-    url: "https://yourdomain.com",
+    url: "https://webtoolkit-tau.vercel.app",
     siteName: "Free Tools Hub",
     type: "website",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/images/home-page-image.png",
         alt: "Free Online Tools Collection",
       },
     ],
@@ -44,7 +42,7 @@ export const metadata: Metadata = {
     title: "Free Online Tools Collection",
     description:
       "Use free online tools for everyday tasks — fast, simple, and easy.",
-    images: ["/og-image.png"],
+    images: ["/images/home-page-image.png"],
   },
 
   robots: {
@@ -163,12 +161,12 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Free Online Tools Hub",
-            url: "https://yourdomain.com",
+            url: "https://webtoolkit-tau.vercel.app",
             description:
               "A collection of free online tools for everyday tasks like QR generation, image compression, text tools and more.",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://yourdomain.com/search?q={search_term_string}",
+              target: "https://webtoolkit-tau.vercel.app/search?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),

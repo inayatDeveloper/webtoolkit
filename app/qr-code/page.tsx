@@ -25,8 +25,6 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "https://webtoolkit-tau.vercel.app/images/qr-image.png",
-                width: 1200,
-                height: 630,
                 alt: "QR Code Generator Tool",
             },
         ],

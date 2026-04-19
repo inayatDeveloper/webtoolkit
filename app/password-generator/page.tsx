@@ -25,8 +25,6 @@ export const metadata: Metadata = {
         images: [
             {
                 url: "https://webtoolkit-tau.vercel.app/images/password-image.png",
-                width: 1200,
-                height: 630,
                 alt: "Password Generator Tool",
             },
         ],
