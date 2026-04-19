@@ -1,7 +1,38 @@
 export const metadata = {
     title: "About | WebToolkit",
     description:
-        "WebToolkit provides free, fast, and easy-to-use online tools like QR Code Generator, JSON Formatter, and more.",
+        "WebToolkit provides free, fast, and easy-to-use online tools like QR Code Generator, JSON Formatter, Image Compressor, and more.",
+
+    openGraph: {
+        title: "About | WebToolkit",
+        description:
+            "WebToolkit provides free, fast, and easy-to-use online tools for developers and everyday users.",
+        url: "https://webtoolkit-tau.vercel.app/about",
+        siteName: "WebToolkit",
+        type: "website",
+        images: [
+            {
+                url: "https://webtoolkit-tau.vercel.app/images/about-image.png",
+                alt: "About WebToolkit",
+            },
+        ],
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: "About | WebToolkit",
+        description:
+            "WebToolkit provides free, fast, and easy-to-use online tools.",
+        images: ["https://webtoolkit-tau.vercel.app/images/about-image.png"],
+    },
+
+    keywords: [
+        "about webtoolkit",
+        "free online tools",
+        "qr code generator",
+        "json formatter",
+        "developer tools",
+    ],
 };
 
 const tools = [
@@ -56,7 +87,6 @@ export default function About() {
                         To provide simple, reliable, and efficient tools for everyone.
                     </p>
 
-                    {/* NEW LINE */}
                     <p className="text-gray-400 text-sm">
                         🚀 More powerful tools are continuously being added to improve your productivity soon.
                     </p>

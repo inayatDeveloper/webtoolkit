@@ -1,7 +1,37 @@
 export const metadata = {
     title: "Contact | WebToolkit",
     description:
-        "Contact WebToolkit for support, feedback, or business inquiries.",
+        "Get in touch with WebToolkit for support, feedback, or business inquiries. We’re here to help you anytime.",
+
+    openGraph: {
+        title: "Contact | WebToolkit",
+        description:
+            "Get in touch with WebToolkit for support, feedback, or business inquiries.",
+        url: "https://webtoolkit-tau.vercel.app/contact",
+        siteName: "WebToolkit",
+        type: "website",
+        images: [
+            {
+                url: "https://webtoolkit-tau.vercel.app/images/contact-image.png",
+                alt: "WebToolkit Contact Page",
+            },
+        ],
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact | WebToolkit",
+        description:
+            "Get in touch with WebToolkit for support, feedback, or business inquiries.",
+        images: ["https://webtoolkit-tau.vercel.app/images/contact-image.png"],
+    },
+
+    keywords: [
+        "contact webtoolkit",
+        "support webtoolkit",
+        "business inquiry",
+        "webtoolkit contact",
+    ],
 };
 
 export default function Contact() {

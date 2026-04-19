@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/image-resizer",
         "/image-cropper",
         "/image-compressor",
+        "/about",
+        "/contact",
+        "/privacy-policy"
     ];
 
     const toolPages = tools.map((path) => ({

@@ -1,7 +1,37 @@
 export const metadata = {
     title: "Privacy Policy | WebToolkit",
     description:
-        "Learn how WebToolkit protects your data while using our free online tools.",
+        "Learn how WebToolkit protects your data while using our free online tools. We respect your privacy and explain how data is handled.",
+
+    openGraph: {
+        title: "Privacy Policy | WebToolkit",
+        description:
+            "Learn how WebToolkit protects your data while using our free online tools.",
+        url: "https://webtoolkit-tau.vercel.app/privacy-policy",
+        siteName: "WebToolkit",
+        type: "website",
+        images: [
+            {
+                url: "https://webtoolkit-tau.vercel.app/images/privacy-image.png",
+                alt: "WebToolkit Privacy Policy",
+            },
+        ],
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title: "Privacy Policy | WebToolkit",
+        description:
+            "Learn how WebToolkit protects your data while using our free online tools.",
+        images: ["https://webtoolkit-tau.vercel.app/images/privacy-image.png"],
+    },
+
+    keywords: [
+        "privacy policy webtoolkit",
+        "data protection",
+        "cookies policy",
+        "webtoolkit privacy",
+    ],
 };
 
 export default function PrivacyPolicy() {
