@@ -3,53 +3,30 @@ import ToolCard from "./components/ToolCard";
 
 /* ================= SEO METADATA (GENERIC AUDIENCE) ================= */
 export const metadata: Metadata = {
-  title: "Free Online Tools Collection | Fast, Simple & Useful Everyday Tools",
+  title: "Free Online Tools Collection | Fast, Simple & Useful Tools",
   description:
-    "Discover free online tools for everyday use like QR code generator, image compressor, password generator, word counter, color picker, and more. Fast, simple, and easy for everyone.",
-  keywords: [
-    "free online tools",
-    "QR code generator",
-    "image compressor",
-    "password generator",
-    "word counter",
-    "color picker",
-    "online utilities",
-    "free tools website",
-    "convert tools online",
-    "easy online tools",
-  ],
-  authors: [{ name: "webtoolkit-tau" }],
-  creator: "Inayat Ullah",
-  metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
+    "Discover free online tools like QR generator, password generator, image tools, and more.",
 
   openGraph: {
     title: "Free Online Tools Collection",
     description:
-      "A simple and fast collection of free online tools for everyday tasks like QR codes, images, text, and more.",
+      "Fast and simple free online tools for everyday tasks.",
     url: "https://webtoolkit-tau.vercel.app",
-    siteName: "Free Tools Hub",
+    siteName: "Web Toolkit",
     type: "website",
     images: [
       {
         url: "https://webtoolkit-tau.vercel.app/images/home-page-image.png",
-        alt: "Free Online Tools Collection",
         width: 1200,
         height: 630,
+        alt: "Free Online Tools",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Free Online Tools Collection",
-    description:
-      "Use free online tools for everyday tasks — fast, simple, and easy.",
     images: ["https://webtoolkit-tau.vercel.app/images/home-page-image.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
