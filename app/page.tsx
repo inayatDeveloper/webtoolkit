@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/home-page-image.png",
+        url: "https://webtoolkit-tau.vercel.app/images/home-page-image.png",
         alt: "Free Online Tools Collection",
       },
     ],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Free Online Tools Collection",
     description:
       "Use free online tools for everyday tasks — fast, simple, and easy.",
-    images: ["/images/home-page-image.png"],
+    images: ["https://webtoolkit-tau.vercel.app/images/home-page-image.png"],
   },
 
   robots: {
@@ -81,7 +81,7 @@ const tools = [
   {
     title: "Text Generator",
     subtitle: "Generate placeholder text for any purpose",
-    link: "/text-Generator",
+    link: "/text-generator",
   },
   {
     title: "Age Calculator",

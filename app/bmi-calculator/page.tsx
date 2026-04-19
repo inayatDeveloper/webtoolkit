@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/BMI-calcultor.png",
+                url: "https://webtoolkit-tau.vercel.app/images/BMI-calcultor-image.png",
                 alt: "BMI Calculator Tool",
             },
         ],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         description:
             "Check your BMI instantly using age, height, and weight.",
         images: [
-            "https://webtoolkit-tau.vercel.app/images/BMI-calcultor.png",
+            "https://webtoolkit-tau.vercel.app/images/BMI-calcultor-image.png",
         ],
     },
 
