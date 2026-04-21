@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-/* ================= TOOLS DATA (GENERIC + FUTURE READY) ================= */
+/* ================= TOOLS DATA ================= */
 const tools = [
   {
     title: "QR Code Generator",
@@ -72,7 +72,6 @@ const tools = [
     subtitle: "Check Your Body Mass Index Instantly",
     link: "/bmi-calculator",
   },
-
   {
     title: "Color Picker",
     subtitle: "Pick and explore colors with ease",
@@ -85,7 +84,7 @@ const tools = [
   },
   {
     title: "Image Cropper",
-    subtitle: "Crop photos online fast and free.”.",
+    subtitle: "Crop photos online fast and free.",
     link: "/image-cropper",
   },
   {
@@ -101,18 +100,25 @@ export default function Home() {
     <main className="px-4 py-10 sm:px-6">
       <div className="max-w-6xl mx-auto">
 
-        {/* HERO SECTION (SEO IMPORTANT) */}
+        {/* ================= HERO SECTION (CTR OPTIMIZED) ================= */}
         <header className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             🚀 Free Online Tools for Everyday Use
           </h1>
 
-          <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto">
+          <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-4">
             A growing collection of simple, fast, and free online tools to help you with everyday tasks — from generating QR codes to editing text and images.
           </p>
+
+          {/* 🔥 CTR BOOST ELEMENTS */}
+          <div className="flex flex-col sm:flex-row justify-center gap-3 text-xs sm:text-sm text-gray-400">
+            <span>✔ No signup required</span>
+            <span>✔ 100% free forever</span>
+            <span>✔ Works instantly in browser</span>
+          </div>
         </header>
 
-        {/* TOOLS GRID */}
+        {/* ================= TOOLS GRID ================= */}
         <section
           aria-label="Online tools collection"
           className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
@@ -132,7 +138,7 @@ export default function Home() {
         </section>
       </div>
 
-      {/* ================= STRUCTURED DATA (GOOGLE SEO BOOST) ================= */}
+      {/* ================= STRUCTURED DATA ================= */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -145,7 +151,8 @@ export default function Home() {
               "A collection of free online tools for everyday tasks like QR generation, image compression, text tools and more.",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://webtoolkit-tau.vercel.app/search?q={search_term_string}",
+              target:
+                "https://webtoolkit-tau.vercel.app/search?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),

@@ -1,5 +1,9 @@
 import { MetadataRoute } from "next";
 
+// ✅ IMPORTANT: disable caching (fix 304 issue)
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://webtoolkit-tau.vercel.app";
 
@@ -21,9 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/privacy-policy"
     ];
 
+    const now = new Date();
+
     const toolPages = tools.map((path) => ({
         url: `${baseUrl}${path}`,
-        lastModified: new Date(),
+        lastModified: now,
         changeFrequency: "weekly" as const,
         priority: 0.8,
     }));
@@ -31,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: baseUrl,
-            lastModified: new Date(),
+            lastModified: now,
             changeFrequency: "daily",
             priority: 1,
         },
