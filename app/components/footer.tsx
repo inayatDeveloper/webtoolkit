@@ -59,10 +59,10 @@ const Footer = () => {
                             Tools
                         </h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/tools/qr-code" className="hover:text-white">QR Generator</Link></li>
-                            <li><Link href="/tools/json-formatter" className="hover:text-white">JSON Formatter</Link></li>
-                            <li><Link href="/tools/image-compressor" className="hover:text-white">Image Compressor</Link></li>
-                            <li><Link href="/tools/password-generator" className="hover:text-white">Password Generator</Link></li>
+                            <li><Link href="/qr-code" className="hover:text-white">QR Generator</Link></li>
+                            <li><Link href="/json-formatter" className="hover:text-white">JSON Formatter</Link></li>
+                            <li><Link href="/image-compressor" className="hover:text-white">Image Compressor</Link></li>
+                            <li><Link href="/password-generator" className="hover:text-white">Password Generator</Link></li>
                         </ul>
                     </div>
 
