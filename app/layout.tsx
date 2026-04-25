@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
@@ -34,7 +35,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"><div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 text-white"> <Navbar />{children} <Footer /><Analytics /></div></body>
+      <body className="min-h-full flex flex-col"><div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 text-white"> <Navbar />{children} <Footer /><Analytics /><SpeedInsights /></div></body>
     </html>
   );
 }
