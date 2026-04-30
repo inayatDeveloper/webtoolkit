@@ -18,12 +18,12 @@ export const metadata: Metadata = {
         title: "Lorem Ipsum Generator Tool",
         description:
             "Create placeholder text instantly for documents, websites, and designs.",
-        url: "https://webtoolkit-tau.vercel.app/text-generator",
+        url: "https://webtoolkit-tau.vercel.app/generator-text",
         siteName: "webtoolkit-tau",
         type: "website",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/text-generator-image.png",
+                url: "https://webtoolkit-tau.vercel.app/images/generator-text-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Lorem Ipsum Generator Tool",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         description:
             "Generate placeholder text instantly for designs and content.",
         images: [
-            "https://webtoolkit-tau.vercel.app/images/text-generator-image.png",
+            "https://webtoolkit-tau.vercel.app/images/generator-text-image.png",
         ],
     },
 
@@ -60,7 +60,7 @@ export default function Page() {
                         "@context": "https://schema.org",
                         "@type": "WebApplication",
                         name: "Lorem Ipsum Generator",
-                        url: "https://webtoolkit-tau.vercel.app/text-generator",
+                        url: "https://webtoolkit-tau.vercel.app/generator-text",
                         description:
                             "Free online Lorem Ipsum generator to create placeholder text instantly.",
                         applicationCategory: "Utility",

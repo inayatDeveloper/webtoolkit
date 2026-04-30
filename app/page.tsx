@@ -60,7 +60,7 @@ const tools = [
   {
     title: "Text Generator",
     subtitle: "Generate placeholder text for any purpose",
-    link: "/text-generator",
+    link: "/generator-text",
   },
   {
     title: "Age Calculator",
