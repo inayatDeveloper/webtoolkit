@@ -1,12 +1,25 @@
 export const metadata = {
-    title: "Privacy Policy | WebToolkit",
+    title: "Privacy Policy | WebToolkit - Data Protection & User Privacy",
     description:
-        "Learn how WebToolkit protects your data while using our free online tools. We respect your privacy and explain how data is handled.",
+        "Read WebToolkit Privacy Policy to understand how we handle data, cookies, and user privacy while using our free online tools. We respect your privacy.",
+
+    keywords: [
+        "privacy policy webtoolkit",
+        "webtoolkit data protection",
+        "cookies policy webtoolkit",
+        "online tools privacy policy",
+        "user data protection policy",
+        "webtoolkit privacy terms",
+        "no data collection tools website",
+        "browser based tools privacy"
+    ],
+
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
         title: "Privacy Policy | WebToolkit",
         description:
-            "Learn how WebToolkit protects your data while using our free online tools.",
+            "Learn how WebToolkit protects your privacy while using free online tools.",
         url: "https://webtoolkit-tau.vercel.app/privacy-policy",
         siteName: "WebToolkit",
         type: "website",
@@ -22,16 +35,20 @@ export const metadata = {
         card: "summary_large_image",
         title: "Privacy Policy | WebToolkit",
         description:
-            "Learn how WebToolkit protects your data while using our free online tools.",
-        images: ["https://webtoolkit-tau.vercel.app/images/privacy-image.png"],
+            "Learn how WebToolkit handles data and protects user privacy.",
+        images: [
+            "https://webtoolkit-tau.vercel.app/images/privacy-image.png"
+        ],
     },
 
-    keywords: [
-        "privacy policy webtoolkit",
-        "data protection",
-        "cookies policy",
-        "webtoolkit privacy",
-    ],
+    alternates: {
+        canonical: "https://webtoolkit-tau.vercel.app/privacy-policy",
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 export default function PrivacyPolicy() {

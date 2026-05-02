@@ -3,18 +3,22 @@ import WordCounterClient from "./wordCounterClient";
 
 // ✅ SEO METADATA (Google + SMO)
 export const metadata: Metadata = {
-    title: "Word Counter Tool | Count Words, Characters & Reading Time",
+    title: "Word Counter Tool Online (Free) | Count Words, Characters & Reading Time",
     description:
-        "Free Word Counter Tool to instantly count words, characters, sentences, paragraphs, and reading time. Fast, accurate, and easy online text analyzer.",
+        "Free online word counter tool to count words, characters, sentences, paragraphs, and reading time instantly. Fast and accurate text analysis for writers and SEO.",
+
     keywords: [
-        "word counter",
-        "character counter",
-        "text analyzer",
-        "word count tool",
-        "sentence counter",
-        "paragraph counter",
-        "reading time calculator",
-        "online text tool",
+        "word counter online free",
+        "character counter tool",
+        "text analyzer online",
+        "word count tool free",
+        "sentence counter online",
+        "paragraph counter tool",
+        "reading time calculator tool",
+        "seo text analyzer",
+        "writing word counter tool",
+        "WebToolkit word counter",
+        "online text statistics tool"
     ],
 
     robots: {
@@ -22,12 +26,14 @@ export const metadata: Metadata = {
         follow: true,
     },
 
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
+
     openGraph: {
-        title: "Word Counter Tool - Analyze Text Instantly",
+        title: "Word Counter Tool Online (Free)",
         description:
-            "Count words, characters, sentences, paragraphs and reading time instantly with this free online tool.",
+            "Count words, characters, sentences, paragraphs, and reading time instantly with this free online text analyzer.",
         url: "https://webtoolkit-tau.vercel.app/word-counter",
-        siteName: "webtoolkit-tau",
+        siteName: "WebToolkit",
         type: "website",
         images: [
             {
@@ -39,10 +45,12 @@ export const metadata: Metadata = {
 
     twitter: {
         card: "summary_large_image",
-        title: "Word Counter Tool",
+        title: "Word Counter Tool Online (Free)",
         description:
-            "Free online tool to count words, characters, sentences and reading time.",
-        images: ["https://webtoolkit-tau.vercel.app/images/word-counter-image.png"],
+            "Analyze text instantly: words, characters, sentences, and reading time.",
+        images: [
+            "https://webtoolkit-tau.vercel.app/images/word-counter-image.png"
+        ],
     },
 
     alternates: {

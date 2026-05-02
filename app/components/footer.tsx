@@ -59,10 +59,20 @@ const Footer = () => {
                             Tools
                         </h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/qr-code" className="hover:text-white">QR Generator</Link></li>
-                            <li><Link href="/json-formatter" className="hover:text-white">JSON Formatter</Link></li>
-                            <li><Link href="/image-compressor" className="hover:text-white">Image Compressor</Link></li>
-                            <li><Link href="/password-generator" className="hover:text-white">Password Generator</Link></li>
+                            <ul className="space-y-2 text-sm text-gray-400">
+                                <li><Link href="/qr-code">QR Code Generator</Link></li>
+                                <li><Link href="/json-formatter">JSON Formatter</Link></li>
+                                <li><Link href="/password-generator">Password Generator</Link></li>
+                                <li><Link href="/base64-generator">Base64 Encoder/Decoder</Link></li>
+                                <li><Link href="/word-counter">Word Counter</Link></li>
+                                <li><Link href="/text-creator">Text Creator</Link></li>
+                                <li><Link href="/age-calculator">Age Calculator</Link></li>
+                                <li><Link href="/bmi-calculator">BMI Calculator</Link></li>
+                                <li><Link href="/color-picker">Color Picker</Link></li>
+                                <li><Link href="/image-resizer">Image Resizer</Link></li>
+                                <li><Link href="/image-cropper">Image Cropper</Link></li>
+                                <li><Link href="/image-compressor">Image Compressor</Link></li>
+                            </ul>
                         </ul>
                     </div>
 
@@ -71,11 +81,58 @@ const Footer = () => {
                         <h3 className="text-sm font-semibold mb-3 text-white">
                             Categories
                         </h3>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li className="hover:text-white cursor-pointer">Developer Tools</li>
-                            <li className="hover:text-white cursor-pointer">Image Tools</li>
-                            <li className="hover:text-white cursor-pointer">Text Tools</li>
-                        </ul>
+
+                        <div className="space-y-4 text-sm text-gray-400">
+
+                            {/* Developer Tools */}
+                            <div>
+                                <p className="text-white text-xs font-semibold mb-2 uppercase tracking-wide">
+                                    Developer Tools
+                                </p>
+                                <ul className="space-y-1">
+                                    <li><Link href="/json-formatter">JSON Formatter</Link></li>
+                                    <li><Link href="/base64-generator">Base64 Encoder/Decoder</Link></li>
+                                </ul>
+                            </div>
+
+                            {/* Text Tools */}
+                            <div>
+                                <p className="text-white text-xs font-semibold mb-2 uppercase tracking-wide">
+                                    Text Tools
+                                </p>
+                                <ul className="space-y-1">
+                                    <li><Link href="/word-counter">Word Counter</Link></li>
+                                    <li><Link href="/text-creator">Text Generator</Link></li>
+                                    <li><Link href="/password-generator">Password Generator</Link></li>
+                                </ul>
+                            </div>
+
+                            {/* Image Tools */}
+                            <div>
+                                <p className="text-white text-xs font-semibold mb-2 uppercase tracking-wide">
+                                    Image Tools
+                                </p>
+                                <ul className="space-y-1">
+                                    <li><Link href="/image-resizer">Image Resizer</Link></li>
+                                    <li><Link href="/image-cropper">Image Cropper</Link></li>
+                                    <li><Link href="/image-compressor">Image Compressor</Link></li>
+                                    <li><Link href="/color-picker">Color Picker</Link></li>
+                                </ul>
+                            </div>
+
+                            {/* Utility Tools */}
+                            <div>
+                                <p className="text-white text-xs font-semibold mb-2 uppercase tracking-wide">
+                                    Utility Tools
+                                </p>
+                                <ul className="space-y-1">
+                                    <li><Link href="/qr-code">QR Code Generator</Link></li>
+                                    <li><Link href="/age-calculator">Age Calculator</Link></li>
+                                    <li><Link href="/bmi-calculator">BMI Calculator</Link></li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
 
                     {/* Company */}

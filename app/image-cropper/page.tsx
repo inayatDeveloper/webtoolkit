@@ -1,39 +1,67 @@
 import ImageCropper from "./imageCropperClient";
 import type { Metadata } from "next";
-
 export const metadata: Metadata = {
-    title: "Image Cropper Tool | Crop Images Online Free",
+    title: "Crop Image Online (Free) | Image Cropper for JPG, PNG & Social Media",
     description:
-        "Free online image cropper tool to crop images instantly in your browser without uploading. Fast, secure and easy Web Toolkit utility.",
+        "Free online image cropper to crop JPG and PNG images instantly. Adjust aspect ratio, resize for Instagram, and download cropped images without quality loss.",
+
     keywords: [
-        "image cropper",
-        "crop image online",
-        "photo crop tool",
-        "free image cropper",
-        "web toolkit image tools",
+        "crop image online free",
+        "image cropper tool jpg png",
+        "photo crop tool online",
+        "crop image for instagram size",
+        "resize and crop image online",
+        "aspect ratio image cropper",
+        "crop image without losing quality",
+        "free online photo cropper",
+        "image crop tool for web design",
+        "WebToolkit image cropper",
+        "browser based image editing tool"
     ],
+
+    authors: [{ name: "Inayat Ullah" }],
+    creator: "WebToolkit",
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
+
     openGraph: {
-        title: "Image Cropper Tool - Crop Images Instantly",
+        title: "Free Image Cropper | Crop Photos Online Instantly",
         description:
-            "Crop images online for free without uploading. Fast browser-based image cropper tool.",
+            "Crop images online for free. Adjust size, aspect ratio, and download instantly with this fast browser-based tool.",
         url: "https://webtoolkit-tau.vercel.app/image-cropper",
+        siteName: "WebToolkit",
         type: "website",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/image-cropper.png",
+                url: "https://webtoolkit-tau.vercel.app/images/image-cropper.png", // ✅ unchanged
+                alt: "Image Cropper Online Tool",
             },
         ],
     },
+
     twitter: {
         card: "summary_large_image",
-        title: "Image Cropper Tool",
+        title: "Image Cropper Online (Free)",
         description:
-            "Crop images instantly in browser - free Web Toolkit tool.",
-        images: ["https://webtoolkit-tau.vercel.app/images/image-cropper.png"],
+            "Crop and resize images instantly with this free tool.",
+        images: [
+            "https://webtoolkit-tau.vercel.app/images/image-cropper.png" // ✅ unchanged
+        ],
     },
+
+    alternates: {
+        canonical: "https://webtoolkit-tau.vercel.app/image-cropper",
+    },
+
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
     },
 };
 

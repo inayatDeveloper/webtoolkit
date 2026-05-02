@@ -2,47 +2,65 @@ import type { Metadata } from "next";
 import PasswordGenerator from "./passwordGeneratorClient";
 
 export const metadata: Metadata = {
-    title: "Password Generator - Create Secure Passwords Online",
+    title: "Password Generator Online (Free) | Create Strong & Secure Passwords",
     description:
-        "Generate strong and secure passwords instantly. Customize length, symbols, numbers, and more with this free online password generator.",
+        "Free online password generator to create strong, secure, and random passwords. Customize length, symbols, numbers, and complexity instantly.",
+
     keywords: [
-        "password generator",
-        "secure password",
+        "password generator online free",
         "strong password generator",
-        "random password generator",
-        "create password online",
+        "secure random password generator",
+        "create strong password online",
+        "random password generator with symbols",
+        "password generator for accounts",
+        "safe password creator tool",
+        "generate uncrackable password",
+        "password generator with numbers and symbols",
+        "WebToolkit password generator",
+        "online security password tool"
     ],
 
     metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
-        title: "Secure Password Generator Tool",
+        title: "Free Password Generator | Create Strong Secure Passwords",
         description:
-            "Create strong and secure passwords instantly for your accounts.",
+            "Generate strong, random, and secure passwords instantly with custom options for symbols, numbers, and length.",
         url: "https://webtoolkit-tau.vercel.app/password-generator",
-        siteName: "webtoolkit-tau",
+        siteName: "WebToolkit",
         type: "website",
         images: [
             {
                 url: "https://webtoolkit-tau.vercel.app/images/password-image.png",
-                alt: "Password Generator Tool",
+                alt: "Password Generator Online Tool",
             },
         ],
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "Secure Password Generator Tool",
+        title: "Password Generator Online (Free)",
         description:
-            "Generate strong and secure passwords instantly.",
+            "Create strong and secure passwords instantly with custom options.",
         images: [
             "https://webtoolkit-tau.vercel.app/images/password-image.png",
         ],
     },
 
+    alternates: {
+        canonical: "https://webtoolkit-tau.vercel.app/password-generator",
+    },
+
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
     },
 };
 

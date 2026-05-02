@@ -2,50 +2,65 @@ import BMICalculator from "./bmiCalculatorClient";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "BMI Calculator with Age – Check Your Body Mass Index Instantly",
+    title: "BMI Calculator Online (Free) | Check Body Mass Index by Age, Height & Weight",
     description:
-        "Free BMI calculator with age, height, and weight. Instantly check your Body Mass Index and understand your health status.",
+        "Use this free BMI calculator to check your Body Mass Index using age, height, and weight. Get instant BMI results with health classification (underweight, normal, overweight).",
+
     keywords: [
-        "BMI calculator",
-        "BMI with age",
-        "body mass index calculator",
-        "health tool online",
-        "weight calculator",
+        "bmi calculator online free",
+        "body mass index calculator with age height weight",
+        "check bmi instantly online",
+        "bmi calculator for male and female",
+        "healthy bmi range calculator",
+        "bmi formula calculator online",
+        "weight and height bmi calculator",
+        "bmi classification underweight normal overweight",
+        "bmi calculator kg and cm",
+        "WebToolkit bmi calculator",
+        "free online health calculator tool"
     ],
 
+    authors: [{ name: "Inayat Ullah" }],
+    creator: "WebToolkit",
     metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
-        title: "BMI Calculator with Age",
+        title: "Free BMI Calculator | Check Your Body Mass Index Instantly",
         description:
-            "Calculate BMI using age, height, and weight instantly with this free online health tool.",
+            "Calculate your BMI using height, weight, and age. Get instant results with accurate health classification.",
         url: "https://webtoolkit-tau.vercel.app/bmi-calculator",
-        siteName: "webtoolkit-tau",
+        siteName: "WebToolkit",
         type: "website",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/BMI-calcultor-image.png",
-                alt: "BMI Calculator Tool",
+                url: "https://webtoolkit-tau.vercel.app/images/bmi-calculator-tool.png",
+                alt: "BMI Calculator Online Tool",
             },
         ],
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "BMI Calculator with Age",
+        title: "BMI Calculator Online (Free)",
         description:
-            "Check your BMI instantly using age, height, and weight.",
+            "Check your BMI instantly using height, weight, and age.",
         images: [
-            "https://webtoolkit-tau.vercel.app/images/BMI-calcultor-image.png",
+            "https://webtoolkit-tau.vercel.app/images/bmi-calculator-tool.png",
         ],
     },
 
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
     },
 };
-
 export default function Page() {
     return (
         <>

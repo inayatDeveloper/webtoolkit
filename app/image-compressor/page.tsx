@@ -2,43 +2,52 @@ import type { Metadata } from "next";
 import ImageCompressor from "./imageCompressorClient";
 
 export const metadata: Metadata = {
-    title: "Free Image Compressor Online - Reduce Image Size Instantly",
+    title: "Compress Image Online (Free) | Reduce JPG, PNG Size Without Losing Quality",
     description:
-        "Compress images online, reduce file size, and download optimized images instantly without losing quality.",
+        "Free online image compressor to reduce JPG and PNG file size without losing quality. Optimize images for web, fast loading, and SEO in seconds.",
+
     keywords: [
-        "image compressor",
-        "compress image online",
-        "reduce image size",
-        "optimize images",
-        "photo compressor",
+        "compress image online free",
+        "reduce image size without losing quality",
+        "compress jpg image online",
+        "compress png image online",
+        "image size reducer kb",
+        "optimize images for web",
+        "photo compressor free online",
+        "reduce image file size for website",
+        "bulk image compression tool",
+        "WebToolkit image compressor",
+        "fast image optimizer online"
     ],
 
+    authors: [{ name: "Inayat Ullah" }],
+    creator: "WebToolkit",
     metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
-        title: "Image Compressor Tool",
+        title: "Free Image Compressor | Reduce Image Size Instantly",
         description:
-            "Compress and optimize your images instantly with this free online tool.",
+            "Compress JPG and PNG images online without losing quality. Fast, secure, and free image optimization tool.",
         url: "https://webtoolkit-tau.vercel.app/image-compressor",
-        siteName: "webtoolkit-tau",
+        siteName: "WebToolkit",
         type: "website",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/image-compressor.png",
+                url: "https://webtoolkit-tau.vercel.app/images/image-compressor-tool.png",
                 width: 1200,
                 height: 630,
-                alt: "Image Compressor Tool",
+                alt: "Image Compressor Online Tool",
             },
         ],
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "Image Compressor Tool",
+        title: "Compress Images Online (Free)",
         description:
-            "Compress and optimize images instantly online.",
+            "Reduce image size without losing quality. Optimize JPG and PNG images instantly.",
         images: [
-            "https://webtoolkit-tau.vercel.app/images/image-compressor.png",
+            "https://webtoolkit-tau.vercel.app/images/image-compressor-tool.png",
         ],
     },
 
@@ -49,6 +58,13 @@ export const metadata: Metadata = {
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
     },
 };
 

@@ -1,37 +1,56 @@
 export const metadata = {
-    title: "Contact | WebToolkit",
+    title: "Contact WebToolkit | Support, Feedback & Business Inquiries",
     description:
-        "Get in touch with WebToolkit for support, feedback, or business inquiries. We’re here to help you anytime.",
+        "Contact WebToolkit for support, feedback, bug reports, or business inquiries. Get quick assistance for all our free online tools.",
+
+    keywords: [
+        "contact webtoolkit support",
+        "webtoolkit help and support",
+        "contact developer tools website",
+        "report issue webtoolkit",
+        "webtoolkit business inquiry",
+        "contact online tools platform",
+        "get support webtoolkit",
+        "webtoolkit feedback contact"
+    ],
+
+    authors: [{ name: "Inayat Ullah" }],
+    creator: "WebToolkit",
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
 
     openGraph: {
-        title: "Contact | WebToolkit",
+        title: "Contact WebToolkit | Get Support & Help",
         description:
-            "Get in touch with WebToolkit for support, feedback, or business inquiries.",
+            "Reach out to WebToolkit for support, feedback, or collaboration opportunities.",
         url: "https://webtoolkit-tau.vercel.app/contact",
         siteName: "WebToolkit",
         type: "website",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/contact-image.png",
-                alt: "WebToolkit Contact Page",
+                url: "https://webtoolkit-tau.vercel.app/images/contact-page.png",
+                alt: "Contact WebToolkit Support Page",
             },
         ],
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "Contact | WebToolkit",
+        title: "Contact WebToolkit",
         description:
-            "Get in touch with WebToolkit for support, feedback, or business inquiries.",
-        images: ["https://webtoolkit-tau.vercel.app/images/contact-image.png"],
+            "Need help or want to collaborate? Contact WebToolkit now.",
+        images: [
+            "https://webtoolkit-tau.vercel.app/images/contact-page.png"
+        ],
     },
 
-    keywords: [
-        "contact webtoolkit",
-        "support webtoolkit",
-        "business inquiry",
-        "webtoolkit contact",
-    ],
+    alternates: {
+        canonical: "https://webtoolkit-tau.vercel.app/contact",
+    },
+
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 export default function Contact() {

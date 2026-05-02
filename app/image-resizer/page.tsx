@@ -2,39 +2,67 @@ import ImageResizer from "./imageResizerClient";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Image Resizer Tool | Resize Images Online Free",
+    title: "Resize Image Online (Free) | Change Image Size in JPG, PNG Instantly",
     description:
-        "Free online image resizer tool. Resize images instantly in your browser without uploading. Fast, secure, and SEO optimized Web Toolkit.",
+        "Free online image resizer to change image dimensions and reduce size instantly. Resize JPG and PNG images without losing quality directly in your browser.",
+
     keywords: [
-        "image resizer",
-        "resize image online",
-        "free image tool",
-        "photo resizer",
-        "image compressor",
-        "web toolkit image tools",
+        "resize image online free",
+        "image resizer tool jpg png",
+        "change image size online",
+        "resize image without losing quality",
+        "photo resizer online free",
+        "resize image for instagram",
+        "resize image dimensions px",
+        "image width height resizer",
+        "compress and resize image online",
+        "WebToolkit image resizer",
+        "browser based image resizing tool"
     ],
+
     authors: [{ name: "Inayat Ullah" }],
+    creator: "WebToolkit",
+    metadataBase: new URL("https://webtoolkit-tau.vercel.app"),
+
     openGraph: {
-        title: "Image Resizer Tool - Resize Images Instantly",
+        title: "Free Image Resizer | Resize Photos Online Instantly",
         description:
-            "Resize images online for free without uploading. Fast client-side image resizer tool.",
+            "Resize images online without uploading. Adjust width, height, and dimensions instantly with this fast tool.",
         type: "website",
         url: "https://webtoolkit-tau.vercel.app/image-resizer",
+        siteName: "WebToolkit",
         images: [
             {
-                url: "https://webtoolkit-tau.vercel.app/images/image-resizer.png"
+                url: "https://webtoolkit-tau.vercel.app/images/image-resizer.png", // ✅ unchanged
+                alt: "Image Resizer Online Tool"
             },
         ],
     },
+
     twitter: {
         card: "summary_large_image",
-        title: "Image Resizer Tool",
-        description: "Resize images instantly in browser - free Web Toolkit tool.",
-        images: ["https://webtoolkit-tau.vercel.app/images/image-resizer.png"],
+        title: "Image Resizer Online (Free)",
+        description:
+            "Resize images instantly by changing width and height.",
+        images: [
+            "https://webtoolkit-tau.vercel.app/images/image-resizer.png" // ✅ unchanged
+        ],
     },
+
+    alternates: {
+        canonical: "https://webtoolkit-tau.vercel.app/image-resizer",
+    },
+
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+        },
     },
 };
 

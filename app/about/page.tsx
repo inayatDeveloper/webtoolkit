@@ -27,11 +27,20 @@ export const metadata = {
     },
 
     keywords: [
-        "about webtoolkit",
-        "free online tools",
-        "qr code generator",
-        "json formatter",
-        "developer tools",
+        "WebToolkit about",
+        "free online developer tools",
+        "all in one web tools platform",
+        "online tools for developers",
+        "JSON formatter online free",
+        "QR code generator free",
+        "base64 encoder decoder",
+        "text tools online",
+        "developer utilities free",
+        "fast web utilities for coding",
+        "online code formatter and validator",
+        "SEO friendly web tools platform",
+        "browser based developer tools",
+        "WebToolkit platform features"
     ],
 };
 

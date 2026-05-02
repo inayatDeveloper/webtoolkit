@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/password-generator",
         "/base64-generator",
         "/word-counter",
-        "/generator-text",
+        "/text-creator",
         "/age-calculator",
         "/bmi-calculator",
         "/color-picker",
